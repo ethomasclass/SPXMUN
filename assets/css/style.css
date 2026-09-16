@@ -389,12 +389,32 @@ h2 {
   color: var(--text-heading);
 }
 
+.card-media-wrap {
+  position: relative;
+  width: calc(100% + 3rem);
+  height: 170px;
+  margin: -1.5rem -1.5rem 1rem;
+  overflow: hidden;
+}
+
 .card-media {
   display: block;
-  width: calc(100% + 3rem);
-  height: 160px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin: -1.5rem -1.5rem 1rem;
+  filter: saturate(0.8) contrast(0.96);
+}
+
+.card-media-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 36, 64, 0.25) 0%,
+    rgba(14, 36, 64, 0.15) 45%,
+    rgba(14, 36, 64, 0.55) 100%
+  );
 }
 
 .card-credit {
