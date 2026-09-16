@@ -1,0 +1,308 @@
+:root {
+  --navy: #0a1f44;
+  --navy-dark: #061530;
+  --navy-light: #16305e;
+  --gold: #c9a227;
+  --gold-light: #e0c05c;
+  --cream: #f7f5f0;
+  --text: #1c1c1c;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--navy);
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-header {
+  background: var(--navy);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: white;
+}
+
+.brand .crest {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-text {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.brand-text span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: normal;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+}
+
+nav.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a.active {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.hero {
+  position: relative;
+  color: white;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(10, 31, 68, 0.88), rgba(6, 21, 48, 0.93)),
+    url("../img/campus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero .crest-large {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hero .theme {
+  font-size: 1.3rem;
+  color: var(--gold-light);
+  font-style: italic;
+  margin: 0.25rem 0 1.5rem;
+}
+
+.hero .meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+}
+
+.hero .meta div strong {
+  display: block;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-weight: bold;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1.75rem;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--gold-light);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.page-header {
+  background: var(--navy);
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.page-header p {
+  color: var(--gold-light);
+  margin: 0;
+  font-style: italic;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2ddd0;
+  border-top: 4px solid var(--gold);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--navy);
+}
+
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+table.schedule th,
+table.schedule td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid #e2ddd0;
+  text-align: left;
+}
+
+table.schedule th {
+  background: var(--navy);
+  color: var(--gold-light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+table.schedule tr:nth-child(even) td {
+  background: #f1efe7;
+}
+
+table.schedule tr.break td {
+  color: #777;
+  font-style: italic;
+}
+
+.doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.notice {
+  background: #fff7e0;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  background: var(--navy-dark);
+  color: #cfd6e4;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--gold-light);
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--navy-light);
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .meta {
+    gap: 1rem;
+  }
+}
