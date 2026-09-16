@@ -123,8 +123,8 @@ img {
 }
 
 .brand .crest {
-  width: 42px;
   height: 42px;
+  width: auto;
 }
 
 .brand-text {
