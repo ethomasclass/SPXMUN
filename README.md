@@ -24,11 +24,13 @@ build step required.
 4. Select the `main` branch (or whichever branch this is merged into) and `/ (root)` folder.
 5. Save. The site will be published at `https://<org>.github.io/<repo-name>/`.
 
-## Adding the real logo
+## Logo
 
-Replace `assets/img/crest-placeholder.svg` with the official crest, or add a
-new image file (e.g. `assets/img/crest.png`) and update the `src` attributes
-in each page's `<img class="crest">` / `<img class="crest-large">` tags.
+The official SPX MUN crest lives at `assets/img/spxmun-logo.png` (used in the
+nav bar and favicon) and `assets/img/spxmun-logo-large.png` (higher-resolution
+version used in the homepage hero). Brand colors (navy `#0e2440`, gold
+`#c8a24a`) are sampled from the logo and defined as CSS variables at the top
+of `assets/css/style.css`.
 
 ## Adding a registration form
 
