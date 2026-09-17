@@ -417,6 +417,13 @@ h2 {
   );
 }
 
+.card-topic {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin: 0.4rem 0 1rem;
+}
+
 .card-credit {
   font-family: var(--font-mono);
   font-size: 0.7rem;
